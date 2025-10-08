@@ -13,7 +13,15 @@ body {
   font-size: 14px; /* opsional */
   color: #555; /* opsional */
 }
+.container a {
+  color: #007bff; /* warna biru */
+  text-decoration: none;
+  font-weight: 500;
+}
 
+.container a:hover {
+  text-decoration: underline;
+}
 /* ===== CONTAINER ===== */
 .container {
   max-width: 640px;
