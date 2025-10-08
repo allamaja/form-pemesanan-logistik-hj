@@ -6,6 +6,13 @@ body {
   padding: 40px 0;
   color: #222;
 }
+.container p {
+  text-align: center; /* teks di tengah */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px; /* opsional */
+  color: #555; /* opsional */
+}
 
 /* ===== CONTAINER ===== */
 .container {
