@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan Logistik Hafizh Junior</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Tambahkan logo di sini -->
+      <div class="logo-container">
+        <img src="Logo MK Warna.png" alt="Logo Metode" class="logo">
+      </div>
+      <h2>Form Pemesanan Logistik Metode Khairunnas</h2>
+
+      <!-- Identitas -->
+      <label>Nama Pemesan:</label>
+      <input type="text" id="namaPemesan" placeholder="Masukkan nama pemesan" />
+
+      <label>No. WhatsApp:</label>
+      <input type="number" id="noWa" placeholder="081234567890" />
+
+      <label>Alamat Tujuan:</label>
+      <textarea id="alamat" rows="2" placeholder="Masukkan alamat lengkap"></textarea>
+
+      <label>Cabang:</label>
+      <select id="cabang">
+        <option value="">-- Pilih Cabang --</option>
+        <option>BEKASI</option>
+        <option>BOGOR - Yasmin</option>
+        <option>BOGOR - Kantor</option>
+        <option>DEMAK</option>
+        <option>JEPARA</option>
+        <option>SMRG - Bougenville</option>
+        <option>SMRG - Pendurungan</option>
+        <option>SMRG - Ruko Semawis</option>
+        <option>TANGSEL</option>
+        <option>TASIKMALAYA</option>
+        <option>SBY-Perum IKIP</option>
+        <option>SBY - Wiyung</option>
+        <option>SBY-Tandes</option>
+        <option>SBY-KGM</option>
+        <option>SBY-Bendul</option>
+        <option>SBY - Wiguna</option>
+        <option>SBY - Manukan</option>
+        <option>BKL - Telang</option>
+        <option>BKL - Mlajeh</option>
+        <option>GRESIK</option>
+        <option>SDA - Puri</option>
+        <option>BOJONEGORO</option>
+        <option>BOJONEGORO - Pattimura</option>
+        <option>KDR - Mrican</option>
+        <option>MADIUN - Taman Asri</option>
+        <option>TBN-Delima</option>
+        <option>BKL - Teuku Umar</option>
+      </select>
+
+      <label>Metode Pengiriman:</label>
+        <div class="radio-group">
+        <label><input type="radio" name="pengiriman" value="Ambil Sendiri" /> Ambil Sendiri</label>
+        <label><input type="radio" name="pengiriman" value="Kirim ke Tujuan" /> Kirim ke Tujuan</label>
+        </div>
+
+
+      <hr />
+      <h3>Daftar Barang</h3>
+
+      <div id="barang-container">
+        <div class="barang-row">
+          <select class="barang">
+            <option value="">-- Pilih Barang --</option>
+          </select>
+          <input type="number" class="jumlah" placeholder="Jumlah" />
+          <input type="text" class="keterangan" placeholder="Keterangan (opsional)" />
+          <button type="button" class="hapus">🗑</button>
+        </div>
+      </div>
+
+      <div class="form-buttons">
+        <button type="button" id="tambah">+ Tambah Barang</button>
+        <button type="submit" id="kirim">Kirim Pesanan</button>
+      </div>
+      
+      <p id="status"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
