@@ -96,7 +96,7 @@ async function kirimPesanan() {
     const jumlah = r.querySelector('.jumlah').value.trim();
     const keterangan = r.querySelector('.keterangan').value.trim();
     if (barang && jumlah) {
-      data.push({ namaPemesan, noWa, alamat, cabang, divisi, pengiriman, barang, jumlah, keterangan });
+      data.push({ namaPemesan, noWa, alamat, cabang, pengiriman, barang, jumlah, keterangan });
     }
   });
 
